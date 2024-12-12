@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ 3.8 }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ 3.8 }}
     - jax
     - jaxopt
     - scikit-learn
@@ -31,6 +31,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ 3.8 }
     - pip
 
 about:
