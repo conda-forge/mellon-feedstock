@@ -1,5 +1,5 @@
 {% set name = "mellon" %}
-{% set version = "1.6.1" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0870ed10fd145c2b6b518cab7390de7f532cad127918d988f8febf81cfe069aa
+  sha256: 12f6f29478f7b98b1b427a4484aca627df4017a47d2c25bda85005aae5434d32
 
 build:
   noarch: python
