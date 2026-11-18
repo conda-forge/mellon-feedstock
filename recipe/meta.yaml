@@ -1,13 +1,13 @@
 {% set name = "mellon" %}
-{% set version = "1.7.1" %}
+{% set version = "1.7.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 12f6f29478f7b98b1b427a4484aca627df4017a47d2c25bda85005aae5434d32
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 2b6eb3f834042920dacb709df77964d28e65001d6e177151b6993df24f569b53
 
 build:
   noarch: python
